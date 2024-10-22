@@ -5,5 +5,4 @@
 - Luciana Fernandes de Oliveira - RM557258
 - Lauren Vasconcelos - RM556759
 - Myrella Uchoa Santos - RM557077
-- Sabrina Da Silva Pereira - RM557238
   
