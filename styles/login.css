@@ -1,0 +1,98 @@
+.container__texto-login {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin-top: 3em;
+  font-family: var(--fonte-principal);
+}
+
+.titulo__principal-login {
+  color: var(--laranja-primario);
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.texto__secundario-login {
+  color: var(--cinza-texto);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1em 0 0 0;
+}
+
+.input_login {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.box__login input {
+  margin: 0.6rem 0;
+  background-color: var(--cinza-claro);
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid var(--laranja-primario);
+  border-radius: 13px;
+  padding: 0.8em 4em;
+}
+
+.box__login input::placeholder {
+  font-family: var(--fonte-principal);
+  font-style: italic;
+}
+
+.box__login label {
+  font-family: var(--fonte-principal);
+  color: var(--preto-padrao);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.link__senha {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--preto-padrao);
+}
+
+.botao__padrao-login {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--laranja-primario);
+  padding: 1em;
+  border-radius: 13px;
+  margin-top: 6em;
+}
+
+.container_rodape {
+  margin-top: 4em;
+  padding: 1em;
+}
+
+.texto__rodape {
+  text-align: center;
+  padding: 0.5em;
+  font-family: var(--fonte-principal);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--preto-padrao);
+}
+
+.redes__socias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.cadastro__link {
+  text-decoration: none;
+  color: var(--laranja-primario);
+  font-weight: 700;
+}
+.botao__padrao-login:hover{
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,16 @@
+@import url(./styles/home.css);
+@import url(./styles/login.css);
+
+:root{
+  --laranja-primario:#FF5700;
+  --laranja-secundario: #FE9329;
+  --branco-padrao: #FFFFFF;
+  --cinza-texto: #696969;
+  --cinza-claro:#D9D9D9;
+  --preto-padrao: #444444;
+  --fonte-principal: 'Montserrat';
+}
+
+body {
+  background-color: var(--branco-padrao)
+}
