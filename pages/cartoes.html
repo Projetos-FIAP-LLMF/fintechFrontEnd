@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartões</title>
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="menu_cartoes">
+    <a href="#dashboard" target="_self">
+      <img src="../assets/seta_laranja.svg" alt="Seta para voltar">
+    </a>
+    <h2 class="titulo-principal">Cartões</h2>
+    <div class="notificacao-icon" onclick="notificacoes()">
+      <img src="../assets/icon_notificacao.svg" alt="Sino notificação">
+      <span class="num-notificacao">3</span>
+    </div>
+    <div class="painel-notificacao" id="notificacaoPainel">
+      <h3>Notificações:</h3><br>
+      <ul>
+        <li><a href="#usuario" target="_self">Atualize seus dados.</a></li>
+        <li><a href="#investimentos" target="_self"><strong>investimentos:</strong> Parabêns você atingiu sua meta!</a></li>
+        <li><a href="#blog" target="_self">Confira essas dicas para seus investimentos.</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="cartao_preview">
+    <div class="cartao">
+      Cartão
+      <div class="num-cartao" id="numCartao">0000 0000 0000 0000</div>
+      <div class="nome-cartao" id="nomeCartao">NOME DO TITULAR</div>
+      <div class="exp-cartao" id="expCartao">MM/AA</div>
+    </div>
+  </section>
+  <div class="botao-cartao">
+    <button type="submit" id="add-cartao-botao">
+      <img src="../assets/add_cartao.svg" alt="Adicionar cartão">
+      <p>Adicionar Cartão</p>
+    </button>
+  </div>
+  <div class="modal" id="cartaoModal">
+    <div class="modal-container">
+      <span class="fechar-botao" onclick="toggleModal()">&times;</span>
+      <h2>Adicionar Dados do Cartão:</h2>
+      <br>
+      <form class="formulario" id="form-cartao">
+        <label for="numero">Número do Cartão:</label>
+        <input type="text" id="numero" maxlength="19" placeholder="0000 0000 0000 0000"  oninput="updateCartaoPreview()"/>
+        <br>
+        <label for="nome">Nome do Titular:</label>
+        <input type="text" id="nome" maxlength="30" placeholder="Nome no Cartão"  oninput="updateCartaoPreview()"/>
+        <br>
+        <label for="exp">Data de Expiração:</label>
+        <input type="text" id="exp" maxlength="5" placeholder="MM/AA"  oninput="updateCartaoPreview()"/>
+        <br>
+        <button class="cartao-salvar" type="button" onclick="addCard()">Salvar Cartão</button>
+      </form>
+    </div>
+  </div>
+  <footer class="menu-icones">
+    <a href="#home" class="menu-item">
+      <img src="../assets/usuario.svg" alt="Home">
+    </a>
+    <a href="#ajuda" class="menu-item">
+      <img src="../assets/ajuda.svg" alt="Ajuda">
+    </a>
+    <a href="#cartoes" class="menu-item">
+      <img src="../assets/cartoes.svg" alt="Cartões">
+    </a>
+    <a href="#investimentos" class="menu-item">
+      <img src="../assets/icon_invest.svg" alt="Investimentos">
+    </a>
+    <a href="#configuração" class="menu-item">
+      <img src="../assets/engrenagem.svg" alt="Configuração">
+    </a>
+  </footer>
+  <script src="../scripts/cartoes.js"></script>
+</body>
+
+
+</html>
