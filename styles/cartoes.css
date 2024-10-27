@@ -102,6 +102,7 @@ header{
 
 #add-cartao-botao{
   border: none;
+  background-color: var(--branco-padrao)
 }
 
 .modal {
