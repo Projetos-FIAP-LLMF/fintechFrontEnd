@@ -10,6 +10,39 @@
 </head>
 
 <body>
-    
+    <header>
+        <h1>Cadastro de Usuário</h1>
+        <p>Estamos felizes de ter você conosco.</p>
+        <p>Vamos criar a sua conta abaixo!</p>
+    </header>
+
+    <main class="form-container">
+        <form method="POST">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="contato@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmar_senha">Confirmar Senha</label>
+                <input type="password" id="confirmar_senha" name="confirmar_senha" required>
+            </div>
+            <div class="form-group-button">
+                <button type="submit">Criar Conta</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Ao criar a conta você aceita e concorda com os <b>Termos e Condições</b> e <b>Politica de Privacidade</b>.</p>
+        <p>Já tem uma conta? <a href="./login.html">Clique Aqui</a></p>
+    </footer>
 </body>
 </html>
