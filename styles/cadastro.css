@@ -15,20 +15,23 @@ h1 {
 }
 
 .form-container {
-    margin: 3rem;
+    margin: 2rem;
 }
 
 .form-group {
     display: flex;
+    gap: 0.5rem;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-top: 2rem; /* funciona como um gap */
 }
 
 .form-group-button {
-    margin-top: 2rem; /* funciona como um gap */
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem; /* gap entre o botao e o formulario */
 }
 
 input {
@@ -43,7 +46,7 @@ input {
 
 button {
     display: flex;
-    padding: 10px;
+    padding: 1rem;
     font-size: 1.2rem;
     background-color: var(--laranja-primario);
     color: var(--branco-padrao);
