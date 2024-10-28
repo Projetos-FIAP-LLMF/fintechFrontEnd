@@ -55,18 +55,3 @@ button {
 button:hover {
     background-color: var(--laranja-secundario);
 }
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    margin: 2rem;
-    font-size: 0.9rem;
-
-}
-
-footer b, a {
-    color: var(--laranja-primario);
-    font-weight: 600;
-}
