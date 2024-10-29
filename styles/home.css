@@ -1,1 +1,81 @@
 @import url(../style.css);
+
+header {
+    background-color: var(--laranja-primario);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-photo {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%; /* faz a imagem ser circular */
+}
+
+#box-investimentos {
+    border: 2px solid var(--laranja-primario);
+    border-radius: 15px;
+    background-color: transparent;
+    color: var(--preto-padrao);
+}
+  
+#box-entradas {
+    border: 2px solid var(--verde);
+    border-radius: 15px;
+    background-color: var(--verde);
+    color: var(--branco-padrao);
+}
+  
+#box-cofrinho {
+    border: 2px solid var(--laranja-primario);
+    border-radius: 15px;
+    background-color: transparent;
+    color: var(--preto-padrao);
+}
+  
+#box-saidas {
+    border: 2px solid var(--rosa);
+    border-radius: 15px;
+    background-color: var(--rosa);
+    color: var(--branco-padrao);
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.value {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.bi-eye-fill,
+.bi-eye-slash-fill {
+    color: var(--laranja-primario);
+}
+
+.container-investimento {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-investimento img {
+    width: 23rem;
+    height: auto;
+    border-radius: 15px;
+}
+
+.menu-icones{
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    right: 0; 
+    background-color: #fff; 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}

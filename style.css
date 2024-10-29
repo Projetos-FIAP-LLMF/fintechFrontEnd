@@ -5,10 +5,16 @@
 :root{
   --laranja-primario:#FF5700;
   --laranja-secundario: #FE9329;
+
+  --verde: #abca30;
+  --rosa: #ff859f;
+  --vermelho: #DD2525;
+
+  --preto-padrao: #444444;
   --branco-padrao: #FFFFFF;
   --cinza-texto: #696969;
   --cinza-claro:#D9D9D9;
-  --preto-padrao: #444444;
+
   --fonte-principal:  "Montserrat", sans-serif;
 }
 
