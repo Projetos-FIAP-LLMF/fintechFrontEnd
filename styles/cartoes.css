@@ -6,6 +6,7 @@ header{
   align-items: center;
   padding: 1em;
 }
+
 .titulo-principal {
   font-family: var(--fonte-principal);
   color: var(--laranja-primario);
@@ -21,6 +22,7 @@ header{
   border-radius: 50%;
   z-index:auto;
 }
+
 .painel-notificacao {
   position: fixed;
   top: 60px;

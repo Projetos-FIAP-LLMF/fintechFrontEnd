@@ -51,3 +51,18 @@ button {
 button:hover {
   background-color: var(--laranja-secundario);
 }
+
+input {
+  margin: 0.6rem 0;
+  background-color: var(--cinza-claro);
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid var(--laranja-primario);
+  border-radius: 13px;
+  padding: 0.8em 4em;
+}
+
+input::placeholder {
+  font-family: var(--fonte-principal);
+  font-style: italic;
+}
