@@ -21,6 +21,18 @@ header {
     border-radius: 50%; /* faz a imagem ser circular */
 }
 
+.container-cartoes {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container-cartoes img {
+    width: 23rem;
+    height: auto;
+    border-radius: 15px;
+}
+
 #box-investimentos {
     border: 2px solid var(--laranja-primario);
     border-radius: 15px;
@@ -67,7 +79,6 @@ header {
 .container-investimento {
     display: flex;
     justify-content: center;
-    
 }
 
 .container-investimento img {
