@@ -5,6 +5,16 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.escrita-header {
+    color: var(--branco-padrao);
+    margin-left: 1rem;
+    font-size: 1.15rem;
+}
+
+#icone-notificacao {
+    color: var(--branco-padrao);
+}
+
 .user-photo {
     width: 3.5rem;
     height: 3.5rem;
