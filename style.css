@@ -22,3 +22,32 @@ body {
   font-family: var(--fonte-principal);
   background-color: var(--branco-padrao)
 }
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--laranja-primario);
+}
+
+p {
+  color: var(--cinza-texto);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+button {
+  display: flex;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 20em;
+  justify-content: center;
+  background-color: var(--laranja-primario);
+  color: var(--branco-padrao);
+  border: none;
+  border-radius: 10px;
+  font-weight: 550;
+}
+
+button:hover {
+  background-color: var(--laranja-secundario);
+}
