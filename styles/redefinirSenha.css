@@ -24,7 +24,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 2rem; /* funciona como um gap */
 }
 
@@ -48,6 +48,8 @@ button {
     display: flex;
     padding: 1rem;
     font-size: 1.2rem;
+    width: 20em;
+    justify-content: center;
     background-color: var(--laranja-primario);
     color: var(--branco-padrao);
     border: none;
