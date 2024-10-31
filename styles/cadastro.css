@@ -5,13 +5,20 @@ header {
     flex-direction: column;
     gap: 1.5rem;
     margin: 2rem;
+    margin-top: 5rem;
     font-size: 1.5;
 }
 
 h1 {
-    font-size: 2.2rem;
-    font-weight: 550;
+    font-size: 2.5rem;
+    font-weight: 600;
     color: var(--laranja-primario);
+}
+
+p {
+    color: var(--cinza-texto);
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .form-container {
@@ -25,23 +32,33 @@ h1 {
     justify-content: center;
     font-size: 1.1rem;
     font-weight: 500;
-    margin-top: 2rem; /* funciona como um gap */
 }
 
 .form-group-button {
     display: flex;
     justify-content: center;
-    margin-top: 3rem; /* gap entre o botao e o formulario */
+    margin-top: 2rem; /* gap entre o botao e o formulario */
 }
 
 input {
-    display: flex;
-    padding: 10px;
-    font-size: 1.2rem;
-    border-color: var(--laranja-primario);
+    margin: 0.6rem 0;
     background-color: var(--cinza-claro);
-    color: var(--cinza-texto);
-    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid var(--laranja-primario);
+    border-radius: 13px;
+    padding: 0.8em 4em;
+}
+
+input::placeholder {
+    font-style: italic;
+}
+
+label {
+    font-family: var(--fonte-principal);
+    color: var(--preto-padrao);
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 button {
