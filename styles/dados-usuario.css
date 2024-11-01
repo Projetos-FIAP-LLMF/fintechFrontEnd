@@ -1,0 +1,194 @@
+@import url(../style.css);
+
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--branco-padrao);
+}
+
+header {
+    background-color: var(--laranja-primario);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 25px 25px;
+}
+
+.escrita-header {
+    color: var(--branco-padrao);
+    margin-left: 1rem;
+    font-size: 1.15rem;
+}
+
+#icone-notificacao {
+    color: var(--branco-padrao);
+}
+
+.user-photo {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.num-notificacao {
+    background-color: white;
+    color: red;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    z-index: auto;
+}
+
+.painel-notificacao {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 250px;
+    background-color: var(--cinza-claro);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    color: var(--preto-padrao);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: none;
+    z-index: 1000;
+}
+
+.painel-notificacao h3 {
+    font-size: 16px;
+}
+
+.painel-notificacao ul {
+    list-style: none;
+    padding: 0;
+}
+
+.painel-notificacao a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--preto-padrao);
+}
+
+.painel-notificacao a:hover {
+    color: var(--laranja-primario);
+}
+
+.painel-notificacao li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.painel-notificacao li:last-child {
+    border-bottom: none;
+}
+
+.user {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--laranja-primario);
+}
+
+.fas {
+    color: var(--laranja-primario);
+}
+
+.perfil-container {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: var(--laranja-primario);
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    margin-left: 50px;
+}
+
+.edit-icon {
+    background-color: #f5f5f5;
+    position: relative;
+    bottom: -50px;
+    right: 50px;
+    border-radius: 50%;
+    padding: 6px;
+    margin-left: 18px;
+}
+
+.information {
+    margin-top: 20px;
+}
+
+.account-info {
+    margin: 20px;
+    text-align: left;
+}
+
+.account-info label {
+    font-weight: bold;
+}
+
+.account-info p {
+    color: var(--laranja-primario);
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.edit-password {
+    align-items: center;
+    text-align: center;
+}
+
+.reset-password {
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.edit-password a {
+    color: var(--laranja-primario);
+    text-decoration: none;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.bottom-nav a {
+    color: var(--laranja-primario);
+    font-size: 1.5rem;
+}
+
+.bottom-nav a.active {
+    color: var(--laranja-primario);
+}
+
+.menu-icones {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.menu-icones.hide {
+    transform: translateY(100%);
+}

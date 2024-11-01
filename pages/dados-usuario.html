@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Usuario</title>
+    <link rel="stylesheet" href="../styles/dados-usuario.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <div class="d-flex align-items-center">
+            <img src="../assets/icon-user.svg" alt="Foto do Usuário" class="user-photo me-2">
+            <div>
+                <h5 class="escrita-header"><b>Bem-vindo!</b></h5>
+                <h5 class="escrita-header">Amanda Alves</h5>
+            </div>
+        </div>
+        <div class="notificacao-icon" onclick="notificacoes()">
+            <img src="../assets/icon_notificacao_branca.svg" alt="Sino notificação">
+            <span class="num-notificacao">3</span>
+        </div>
+        <div class="painel-notificacao" id="notificacaoPainel">
+            <h3>Notificações:</h3><br>
+            <ul>
+                <li><a href="#usuario" target="_self">Atualize seus dados.</a></li>
+                <li><a href="#investimentos" target="_self"><strong>investimentos:</strong> Parabêns você atingiu sua
+                        meta!</a></li>
+                <li><a href="#blog" target="_self">Confira essas dicas para seus investimentos.</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <div class="perfil-container">
+        <h1 class="user">Minha conta</h1>
+        <div class="position-relative d-inline-block">
+            <img src="../assets/icon-user.svg" alt="Foto de perfil" class="profile-img">
+            <span class="edit-icon">
+                <a href="#Editar"><i class="fas fa-pen"></i></a>
+            </span>
+            <p class="information">Informações</p>
+        </div>
+    </div>
+
+    <div class="account-container d-flex justify-content-center align-items-center">
+        <div class="account-info mt-4">
+            <label>Nome</label>
+            <p>Amanda Alves</p>
+            <label>Número de telefone</label>
+            <p>+55 (11) 0000-0000</p>
+            <label>Endereço de e-mail</label>
+            <p>amanda_alves@gmail.com</p>
+        </div>
+    </div>
+    <div class="edit-password">
+        <div class="reset-password">
+            <label>Redefinir senha</label>
+            <p>••••••••••</p>
+        </div>
+        <a href="#">Alterar senha</a>
+    </div>
+
+    <footer class="menu-icones">
+        <a href="#home" class="menu-item">
+            <img src="../assets/usuario.svg" alt="Home">
+        </a>
+        <a href="#ajuda" class="menu-item">
+            <img src="../assets/ajuda.svg" alt="Ajuda">
+        </a>
+        <a href="#cartoes" class="menu-item">
+            <img src="../assets/cartoes.svg" alt="Cartões">
+        </a>
+        <a href="#investimentos" class="menu-item">
+            <img src="../assets/icon_invest.svg" alt="Investimentos">
+        </a>
+        <a href="#configuração" class="menu-item">
+            <img src="../assets/engrenagem.svg" alt="Configuração">
+        </a>
+    </footer>
+
+    <script src="../scripts/dados-usuario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

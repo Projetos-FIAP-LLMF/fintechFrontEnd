@@ -1,0 +1,180 @@
+@import url(../style.css);
+
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--branco-padrao);
+}
+
+header {
+    background-color: var(--laranja-primario);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 25px 25px;
+}
+
+.escrita-header {
+    color: var(--branco-padrao);
+    margin-left: 1rem;
+    font-size: 1.15rem;
+}
+
+#icone-notificacao {
+    color: var(--branco-padrao);
+}
+
+.user-photo {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    /* faz a imagem ser circular */
+}
+
+.num-notificacao {
+    background-color: white;
+    color: red;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    z-index: auto;
+}
+
+.painel-notificacao {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 250px;
+    background-color: var(--cinza-claro);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    color: var(--preto-padrao);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: none;
+    z-index: 1000;
+}
+
+.painel-notificacao h3 {
+    font-size: 16px;
+}
+
+.painel-notificacao ul {
+    list-style: none;
+    padding: 0;
+}
+
+.painel-notificacao a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--preto-padrao);
+}
+
+.painel-notificacao a:hover {
+    color: var(--laranja-primario);
+}
+
+.painel-notificacao li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.painel-notificacao li:last-child {
+    border-bottom: none;
+}
+
+.history,
+.search-bar,
+.transaction {
+    margin: 15px;
+    padding: 15px;
+}
+
+.history {
+    font-size: 1.8rem;
+    color: var(--preto-padrao);
+    text-align: center;
+    align-items: center;
+}
+
+.transaction {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.search-bar {
+    border-radius: 40px;
+    background-color: #F0F0F0;
+    padding-right: 40px;
+    position: relative;
+}
+
+.search-bar input {
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 15px;
+    border: none;
+    width: 90%;
+    height: 90%;
+    box-shadow: none;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    padding-right: 10px;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.fas {
+    color: var(--laranja-primario);
+}
+
+.transaction {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.transaction-icon {
+    font-size: 1.5rem;
+    background-color: #EDEDED;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    color: var(--laranja-primario);
+}
+
+.entrada {
+    color: green;
+}
+
+.transaction-info {
+    flex: 1;
+}
+
+.transaction-date {
+    color: var(--cinza-texto);
+}
+
+.menu-icones {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.menu-icones.hide {
+    transform: translateY(100%);
+}
