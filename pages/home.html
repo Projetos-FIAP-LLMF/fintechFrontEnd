@@ -18,23 +18,30 @@
 <body>
   <header class="d-flex justify-content-between align-items-center p-3">
     <div class="d-flex align-items-center">
-      <img src="../assets/icon-user.png" alt="Foto do Usuário" class="user-photo me-2">
+      <img src="../assets/icon-user.svg" alt="Foto do Usuário" class="user-photo me-2">
       <div>
         <h5 class="escrita-header"><b>Bem-vindo!</b></h5>
-        <h5 class="escrita-header">{Nome Completo}</h5>
+        <h5 class="escrita-header">Amanda Alves</h5>
       </div>
     </div>
-    <div>
-      <button class="btn btn-link p-0">
-        <i class="bi bi-bell-fill" id="icone-notificacao"></i> <!-- Ícone de notificações -->
-      </button>
+    <div class="notificacao-icon" onclick="notificacoes()">
+      <img src="../assets/icon_notificacao_branca.svg" alt="Sino notificação">
+      <span class="num-notificacao">3</span>
+    </div>
+    <div class="painel-notificacao" id="notificacaoPainel">
+      <h3>Notificações:</h3><br>
+      <ul>
+        <li><a href="#usuario" target="_self">Atualize seus dados.</a></li>
+        <li><a href="#investimentos" target="_self"><strong>investimentos:</strong> Parabêns você atingiu sua meta!</a></li>
+        <li><a href="#blog" target="_self">Confira essas dicas para seus investimentos.</a></li>
+      </ul>
     </div>
   </header>
 
   <main>
     <section class="container-cartoes"> <!-- seus cartoes -->
       <a href="../pages/cartoes.html">
-        <img src="../assets/imagem-cartoes.png" alt="Vários cartões">
+        <img src="../assets/imagem-cartoes.svg" alt="Vários cartões">
       </a>
     </section>
 
@@ -97,7 +104,7 @@
 
     <section class="container-investimento"> <!-- como comecar investindo -->
       <a href="#">
-        <img src="../assets/homem-investindo.png" alt="Homem investindo em um tablet">
+        <img src="../assets/homem-investindo.svg" alt="Homem investindo em um tablet">
       </a>
     </section>
   </main>
