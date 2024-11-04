@@ -84,8 +84,10 @@ header {
 }
 
 .investment {
-    font-size: 1.8rem;
-    color: var(--preto-padrao);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--laranja-primario);
     text-align: center;
     margin: 10px;
 }
@@ -94,16 +96,20 @@ header {
     display: flex;
     align-items: right;
     margin: 10px;
-    color: var(--preto-padrao);
 }
 
 .balance h2 {
-    font-weight: 700;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    color: var(--preto-padrao);
+    font-size: 32px;
 }
 
 .balance p a{
+    font-family: var(--fonte-principal);
     color: var(--laranja-primario);
-    font-size: 0.9rem;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .balance button {
@@ -118,8 +124,12 @@ header {
 }
 
 .row p {
-    font-size: 1.2rem;
+    font-family: var(--fonte-principal);
+    margin-top: 0.5em;
+    font-size: 15px;
     text-align: center;
+    color: var(--preto-padrao);
+    font-weight: 500;
 }
 
 .investment-options .color-orange {
@@ -143,7 +153,8 @@ header {
 }
 
 .investment-input button {
-    font-size: 1.4rem;
+    font-family: var(--fonte-principal);
+    font-size: 20px;
     background-color: var(--laranja-primario);
     box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -151,14 +162,18 @@ header {
 }
 
 .btn-invest {
+    font-family: var(--fonte-principal);
     color: var(--branco-padrao);
+    font-size: 20px;
+    font-weight: 500;
     border-style: none;
 }
 
 
 .investment-question {
-    font-size: 1.2rem;
-    font-weight: 200;
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .investment-value {
@@ -167,16 +182,22 @@ header {
     text-align: center;
 }
 
-.investment-value .value {
-    color: var(--laranja-primario);
+.investment-value h2{
+    font-family: var(--fonte-principal);
+    color: var(--preto-padrao);
+    font-size: 30px;
+    font-weight: 600;
 }
 
-.date-invest {
-    justify-content: space-between;
-    display: flex;
-    gap: 16px;
-    margin-top: 16px;
-    padding: 10px 10% 10px 10%;
+.investment-value .value {
+    font-family: var(--fonte-principal);
+    color: var(--laranja-primario);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.data {
+    padding: 0 3em 0 3em;
 }
 
 .date {
@@ -185,27 +206,33 @@ header {
 }
 
 .date-name {
-    font-size: 1rem;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
     font-weight: 600;
 }
 
 .date-number {
-    font-size: 0.8rem;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .invest {
-    display: flex;
-    align-items: center;
+    padding: 0 3em 0 3em;
+
 }
 
 .invest-type {
-    font-size: 1rem;
+    font-family: var(--fonte-principal);
+    font-size: 25px;
     font-weight: 600;
 }
 
 .invest-object {
+    font-family: var(--fonte-principal);
     color: var(--laranja-primario);
-    font-size: 1.2rem;
+    font-size: 25px;
+    font-weight: 600;
 
 }
 
