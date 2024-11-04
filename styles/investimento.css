@@ -1,0 +1,285 @@
+@import url(../style.css);
+
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--branco-padrao);
+    color: var(--preto-padrao);
+}
+
+header {
+    background-color: var(--laranja-primario);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 25px 25px;
+}
+
+.escrita-header {
+    color: var(--branco-padrao);
+    margin-left: 1rem;
+    font-size: 1.15rem;
+}
+
+#icone-notificacao {
+    color: var(--branco-padrao);
+}
+
+.user-photo {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.num-notificacao {
+    background-color: white;
+    color: red;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    z-index: auto;
+}
+
+.painel-notificacao {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 250px;
+    background-color: var(--cinza-claro);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    color: var(--preto-padrao);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: none;
+    z-index: 1000;
+}
+
+.painel-notificacao h3 {
+    font-size: 16px;
+}
+
+.painel-notificacao ul {
+    list-style: none;
+    padding: 0;
+}
+
+.painel-notificacao a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--preto-padrao);
+}
+
+.painel-notificacao a:hover {
+    color: var(--laranja-primario);
+} 
+
+.painel-notificacao li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.painel-notificacao li:last-child {
+    border-bottom: none;
+}
+
+.investment {
+    font-size: 1.8rem;
+    color: var(--preto-padrao);
+    text-align: center;
+    margin: 10px;
+}
+
+.balance {
+    display: flex;
+    align-items: right;
+    margin: 10px;
+    color: var(--preto-padrao);
+}
+
+.balance h2 {
+    font-weight: 700;
+}
+
+.balance p a{
+    color: var(--laranja-primario);
+    font-size: 0.9rem;
+}
+
+.balance button {
+    width: 40px;
+    margin-bottom: 40px;
+}
+
+.row {
+    justify-content: space-between;
+    padding-bottom: 4%;
+    padding-top: 2%;
+}
+
+.row p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.investment-options .color-orange {
+    padding: 10px;
+    background-color: var(--laranja-primario);
+    text-align: center;
+    border-style: none;
+    border-radius: 15px;
+}
+
+.investment-options .color-gray {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--cinza-claro);
+    border-style: none;
+    border-radius: 15px;
+}
+
+.investment-input {
+    padding: 10px 20% 10px 20%;
+}
+
+.investment-input button {
+    font-size: 1.4rem;
+    background-color: var(--laranja-primario);
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 15px 0 15px 0;
+}
+
+.btn-invest {
+    color: var(--branco-padrao);
+    border-style: none;
+}
+
+
+.investment-question {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.investment-value {
+    background-color: var(--cinza-claro);
+    padding: 10px;
+    text-align: center;
+}
+
+.investment-value .value {
+    color: var(--laranja-primario);
+}
+
+.date-invest {
+    justify-content: space-between;
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    padding: 10px 10% 10px 10%;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+}
+
+.date-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.date-number {
+    font-size: 0.8rem;
+}
+
+.invest {
+    display: flex;
+    align-items: center;
+}
+
+.invest-type {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.invest-object {
+    color: var(--laranja-primario);
+    font-size: 1.2rem;
+
+}
+
+.nav-bottom {
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-bottom a {
+    color: var(--laranja-primario);
+}
+
+.menu-icones {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.menu-icones.hide {
+    transform: translateY(100%);
+}
+
+@media (max-width: 768px) {
+    .balance {
+        justify-content: left;
+        padding-left: 20px;
+    }
+
+    .investment-options {
+        padding: 10px;
+    }
+
+    .row p {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .investment-input button {
+        font-size: 1.4rem;
+        padding: 10px 0 10px 0;
+    }
+
+    .date-invest {
+        justify-content: space-between;
+        display: flex;
+        gap: 50px;
+        margin-top: 14px;
+        padding: 10px 20% 10px 20%;
+    }
+
+    .invest {
+        margin-top: 10px;
+    }
+    
+    .invest-type {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    
+    .invest-object {
+        color: var(--laranja-primario);
+        font-size: 1rem;
+    
+    }
+}
