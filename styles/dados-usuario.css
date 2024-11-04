@@ -83,10 +83,12 @@ header {
 }
 
 .user {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
+    font-family: var(--fonte-principal);
     color: var(--laranja-primario);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+
 }
 
 .fas {
@@ -97,7 +99,6 @@ header {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    color: var(--laranja-primario);
 }
 
 .profile-img {
@@ -121,35 +122,54 @@ header {
 
 .information {
     margin-top: 20px;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--preto-padrao);
 }
 
 .account-info {
-    margin: 20px;
     text-align: left;
 }
 
 .account-info label {
+    font-family: var(--fonte-principal);
+    color: var(--preto-padrao);
+    font-size: 18px;
     font-weight: bold;
 }
 
 .account-info p {
+    font-family: var(--fonte-principal);
+    font-size: 20px;
     color: var(--laranja-primario);
     font-weight: 500;
     margin-bottom: 25px;
 }
 
 .edit-password {
-    align-items: center;
-    text-align: center;
+    margin-left: 4.4em;
+    text-align: left;
 }
 
 .reset-password {
+    font-family: var(--fonte-principal);
     margin-top: 30px;
-    font-weight: 900;
+    color: var(--preto-padrao);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.reset-password p {
+    font-size: 28px;
+    color: var(--preto-padrao);
 }
 
 .edit-password a {
+    font-family: var(--fonte-principal);
     color: var(--laranja-primario);
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
 }
 
